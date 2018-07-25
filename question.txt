@@ -6,10 +6,14 @@
 		https://blog.csdn.net/sfdev/article/details/2835073
 问题三：
 	连接远程库的教程中出现的问题：
-		$git push -u origin master
-		命令遇到如下的提示信息时：
-		Permission denied(publickey)
-		fatal: Could not read from remote repository
-		Please make sure you have the correct access rightsand the repository exists 
-	解决方案：
-		https://blog.csdn.net/qq_34291777/article/details/55052201?locationNum=1&fps=1
+		（1）$git push -u origin master
+			命令遇到如下的提示信息时：
+			Permission denied(publickey)
+			fatal: Could not read from remote repository
+			Please make sure you have the correct access rightsand the repository exists（请确保你有正确的访问权限和存储库的存在） 
+		解决方案：
+			https://blog.csdn.net/qq_34291777/article/details/55052201?locationNum=1&fps=1
+		（2）Git取消关联远程库的执行命令：$git remote remove origin
+		（3）github登陆后（https://github.com/），在设置中修改自己的公开名和账号密码等信息。
+		（4）github如何删除一个版本库：
+			https://blog.csdn.net/qq_31828515/article/details/52556300
