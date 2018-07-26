@@ -17,3 +17,12 @@
 		（3）github登陆后（https://github.com/），在设置中修改自己的公开名和账号密码等信息。
 		（4）github如何删除一个版本库：
 			https://blog.csdn.net/qq_31828515/article/details/52556300
+问题四：
+	gitee中$git pull origin master出现问题：
+		refusing to merge unrelated histories(他们是两个不同的项目，要把两个不同的项目合并)
+	解决方案：
+		$git pull origin master --allow-unrelated-histories(按ctrl+Z退出备注)
+		$git add .
+		$git commit -m "merge"(说明)
+		$git push origin master
+		
